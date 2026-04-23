@@ -6,7 +6,7 @@ app.use("/about", (req, res)=>{
 })
 
 app.use("/", (req, res)=>{
-    res.send("Hello from Dashbboard....")
+    res.send("Hello from Dashbboard.....")
 })
 
 // app.use("/aboutt", (req, res) => {
