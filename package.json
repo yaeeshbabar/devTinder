@@ -1,0 +1,24 @@
+{
+  "name": "devtinder",
+  "version": "1.0.0",
+  "description": "tinder for developers",
+  "homepage": "https://github.com/yaeeshbabar/devTinder-backend#readme",
+  "bugs": {
+    "url": "https://github.com/yaeeshbabar/devTinder-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaeeshbabar/devTinder-backend.git"
+  },
+  "license": "ISC",
+  "author": "Yaeesh Babar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
