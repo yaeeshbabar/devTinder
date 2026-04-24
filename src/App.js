@@ -1,11 +1,28 @@
 const express = require("express");
 const app = express();
 
-app.use("/about", (req, res)=>{
+app.get("/about", (req, res)=>{
     res.send("About Us")
 })
 
-app.use("/", (req, res)=>{
+app.get("/user", (req, res)=>{
+    console.log(req.query);
+    res.send("Hello from Dashbboard.. " + JSON.stringify(req.query))
+})
+
+app.get("/user2/:id/:name", (req, res, next)=>{
+    console.log(req.params);
+    //res.send("Hello from Dashbboard.. " + JSON.stringify(req.params))
+    next();
+}
+, (req, res, next)=>{
+    console.log(req.params);
+    res.send("Hello from Dashbboard 2 .. " + JSON.stringify(req.params))
+    
+}
+)
+
+app.get("/", (req, res)=>{
     res.send("Hello from Dashbboard.....")
 })
 
